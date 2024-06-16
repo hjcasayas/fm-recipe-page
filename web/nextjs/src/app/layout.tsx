@@ -18,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outer.variable} ${youngSerif.variable} font-outer`}>{children}</body>
+      <body className={`${outer.variable} ${youngSerif.variable} font-outer`}>
+        <main className="min-h-screen min-w-full pt-[124px] bg-eggshell">
+          <div className="w-[376px] mx-auto">
+            {children}
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
